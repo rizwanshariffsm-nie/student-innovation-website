@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Innovation Hub</title>
+    <style>
+        :root { --navy: #17233f; --coral: #ff7657; --cream: #fffaf2; --blue: #dce9ff; } * { box-sizing: border-box; }
+        body { margin: 0; color: var(--navy); background: var(--cream); font-family: Arial, sans-serif; } header { padding: 28px 7vw; background: var(--navy); color: white; } nav { display: flex; justify-content: space-between; align-items: center; } nav strong { font-size: 20px; } nav a { color: white; text-decoration: none; margin-left: 24px; font-size: 14px; }
+        .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; max-width: 1180px; min-height: 64vh; margin: auto; } .hero h1 { margin: 0; font-size: clamp(44px, 7vw, 84px); line-height: .94; } .hero p { max-width: 500px; color: #c6d0e7; font-size: 18px; line-height: 1.6; } .hero img { width: 100%; height: 430px; object-fit: cover; border-radius: 5px; }
+        section { max-width: 1180px; margin: auto; padding: 80px 7vw; } h2 { font-size: 38px; margin-top: 0; } .categories { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; } .categories span { padding: 10px 14px; background: var(--blue); border-radius: 30px; font-size: 13px; font-weight: bold; }
+        .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; } .project { overflow: hidden; background: white; box-shadow: 0 12px 30px #17233f12; } .project img { width: 100%; height: 190px; object-fit: cover; } .project div { padding: 22px; } .project h3 { margin: 0 0 9px; } .project p { color: #65708a; line-height: 1.5; }
+        .team { background: var(--coral); color: white; max-width: none; } .team-inner { max-width: 1180px; margin: auto; padding: 0 7vw; } .team p { max-width: 550px; line-height: 1.6; } .contact { text-align: center; } .contact a { color: var(--coral); font-weight: bold; }
+        @media (max-width: 760px) { nav a { display: none; } .hero, .projects { grid-template-columns: 1fr; } .hero { padding: 60px 0; } .hero img { height: 300px; } }
+    </style>
+</head>
+<body>
+    <header><nav><strong>SIH / 2025</strong><div><a href="#projects">Projects</a><a href="#team">Team</a><a href="#contact">Contact</a></div></nav><div class="hero"><div><p>STUDENT INNOVATION HUB</p><h1>Ideas deserve a place to grow.</h1><p>Meet the student makers turning curious questions into useful projects for the real world.</p></div><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students collaborating at a table"></div></header>
+    <section id="projects"><h2>Projects in progress</h2><div class="categories"><span>Technology</span><span>Design</span><span>Community</span><span>Environment</span></div><div class="projects"><article class="project"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85" alt="Team working together"><div><h3>Campus Connect</h3><p>A student-built platform for finding clubs, events, and collaborators.</p></div></article><article class="project"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=85" alt="Team planning a project"><div><h3>Water Watch</h3><p>Low-cost sensors that help communities understand local water use.</p></div></article><article class="project"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=85" alt="Laptop showing a project"><div><h3>Study Space</h3><p>A calm, accessible study tool designed by students for students.</p></div></article></div></section>
+    <section class="team" id="team"><div class="team-inner"><h2>Built by curious people</h2><p>Our mentors, designers, engineers, and student founders meet every week to test ideas, share feedback, and make meaningful progress.</p></div></section>
+    <section class="contact" id="contact"><h2>Bring your idea</h2><p>Visit the Innovation Lab or <a href="mailto:hello@sih.edu">email hello@sih.edu</a> to get started.</p></section>
+</body>
+</html>
