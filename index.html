@@ -1,21 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Innovation Hub</title>
-    <style>
-        :root { --navy: #17233f; --coral: #ff7657; --cream: #fffaf2; --blue: #dce9ff; } * { box-sizing: border-box; }
-        body { margin: 0; color: var(--navy); background: var(--cream); font-family: Arial, sans-serif; } header { padding: 28px 7vw; background: var(--navy); color: white; } nav { display: flex; justify-content: space-between; align-items: center; } nav strong { font-size: 20px; } nav a { color: white; text-decoration: none; margin-left: 24px; font-size: 14px; }
-        .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; max-width: 1180px; min-height: 64vh; margin: auto; } .hero h1 { margin: 0; font-size: clamp(44px, 7vw, 84px); line-height: .94; } .hero p { max-width: 500px; color: #c6d0e7; font-size: 18px; line-height: 1.6; } .hero img { width: 100%; height: 430px; object-fit: cover; border-radius: 5px; }
-        section { max-width: 1180px; margin: auto; padding: 80px 7vw; } h2 { font-size: 38px; margin-top: 0; } .categories { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; } .categories span { padding: 10px 14px; background: var(--blue); border-radius: 30px; font-size: 13px; font-weight: bold; }
-        .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; } .project { overflow: hidden; background: white; box-shadow: 0 12px 30px #17233f12; } .project img { width: 100%; height: 190px; object-fit: cover; } .project div { padding: 22px; } .project h3 { margin: 0 0 9px; } .project p { color: #65708a; line-height: 1.5; }
-        .team { background: var(--coral); color: white; max-width: none; } .team-inner { max-width: 1180px; margin: auto; padding: 0 7vw; } .team p { max-width: 550px; line-height: 1.6; } .contact { text-align: center; } .contact a { color: var(--coral); font-weight: bold; }
-        @media (max-width: 760px) { nav a { display: none; } .hero, .projects { grid-template-columns: 1fr; } .hero { padding: 60px 0; } .hero img { height: 300px; } }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Innovation Hub | Empowering Next-Gen Creators</title>
+    <meta name="description" content="Discover groundbreaking student-led projects, innovative research, and collaborative tech initiatives at the Student Innovation Hub.">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header><nav><strong>SIH / 2025</strong><div><a href="#projects">Projects</a><a href="#team">Team</a><a href="#contact">Contact</a></div></nav><div class="hero"><div><p>STUDENT INNOVATION HUB</p><h1>Ideas deserve a place to grow.</h1><p>Meet the student makers turning curious questions into useful projects for the real world.</p></div><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students collaborating at a table"></div></header>
-    <section id="projects"><h2>Projects in progress</h2><div class="categories"><span>Technology</span><span>Design</span><span>Community</span><span>Environment</span></div><div class="projects"><article class="project"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85" alt="Team working together"><div><h3>Campus Connect</h3><p>A student-built platform for finding clubs, events, and collaborators.</p></div></article><article class="project"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=85" alt="Team planning a project"><div><h3>Water Watch</h3><p>Low-cost sensors that help communities understand local water use.</p></div></article><article class="project"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=85" alt="Laptop showing a project"><div><h3>Study Space</h3><p>A calm, accessible study tool designed by students for students.</p></div></article></div></section>
-    <section class="team" id="team"><div class="team-inner"><h2>Built by curious people</h2><p>Our mentors, designers, engineers, and student founders meet every week to test ideas, share feedback, and make meaningful progress.</p></div></section>
-    <section class="contact" id="contact"><h2>Bring your idea</h2><p>Visit the Innovation Lab or <a href="mailto:hello@sih.edu">email hello@sih.edu</a> to get started.</p></section>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo" id="brand-logo">
+                <span class="logo-badge">SIH</span>
+                <span>INNOVATION</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#team">Community</a>
+                <a href="#contact" class="nav-cta">Submit Idea</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="hero-wrapper" id="about">
+            <div class="hero">
+                <div>
+                    <div class="hero-pill">
+                        <span class="dot"></span>
+                        Empowering Student Innovators
+                    </div>
+                    <h1>Ideas deserve a place to <span class="gradient-text">grow & thrive.</span></h1>
+                    <p>Meet the visionary student makers turning curious questions into impactful, production-grade solutions for tomorrow's challenges.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary" id="explore-projects-btn">
+                            Explore Projects
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contact" class="btn-secondary" id="join-hub-btn">Join the Cohort</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>45+</h4>
+                            <p>Active Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>120+</h4>
+                            <p>Student Makers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>$50K+</h4>
+                            <p>Seed Grants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-card-container">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85" alt="Students collaborating and brainstorming around a laptop">
+                        <div class="floating-badge">
+                            <div class="badge-icon">💡</div>
+                            <div class="badge-text">
+                                <strong>Fall 2026 Showcase</strong>
+                                <span>12 new live demos ready to explore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <span class="section-badge">Showcase</span>
+                <h2>Projects in Progress</h2>
+                <p>Explore creative ventures across machine learning, eco-sustainability, campus connectivity, and student wellbeing.</p>
+            </div>
+
+            <div class="categories">
+                <button type="button" class="category-tag active">All Initiatives</button>
+                <button type="button" class="category-tag">Technology</button>
+                <button type="button" class="category-tag">Design</button>
+                <button type="button" class="category-tag">Sustainability</button>
+                <button type="button" class="category-tag">Community</button>
+            </div>
+
+            <div class="projects">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85" alt="Campus Connect project team collaborating">
+                        <span class="project-tag">Campus Tech</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Campus Connect</h3>
+                        <p>A unified student-built network that simplifies discovering campus clubs, events, hackathons, and research partners.</p>
+                        <div class="project-meta">
+                            <span>Stage: <strong>Beta</strong></span>
+                            <a href="#contact" class="project-link">
+                                View Details &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=85" alt="Water Watch IoT sensors and monitoring system">
+                        <span class="project-tag">IoT & Eco</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Water Watch</h3>
+                        <p>Low-cost IoT sensors paired with real-time telemetry helping campus facilities and local towns optimize clean water usage.</p>
+                        <div class="project-meta">
+                            <span>Stage: <strong>Field Testing</strong></span>
+                            <a href="#contact" class="project-link">
+                                View Details &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=85" alt="Study Space accessibility app dashboard">
+                        <span class="project-tag">Productivity</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Study Space</h3>
+                        <p>An accessible, distraction-free digital environment crafted with peer-study rooms, Pomodoro synchronizers, and note synthesis.</p>
+                        <div class="project-meta">
+                            <span>Stage: <strong>Production</strong></span>
+                            <a href="#contact" class="project-link">
+                                View Details &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Team & Community Banner -->
+        <div class="team-section-wrap" id="team">
+            <div class="team-container">
+                <div class="team-banner">
+                    <div class="team-info">
+                        <span class="section-badge" style="color: #f43f5e;">The Collective</span>
+                        <h2>Built by curious minds, fueled by passion</h2>
+                        <p>Our mentors, designers, engineers, and student founders convene weekly to iterate on ideas, critique architecture, and translate prototypes into tangible community impact.</p>
+                        <div class="team-highlights">
+                            <div class="highlight-card">
+                                <div class="h-num">100%</div>
+                                <div class="h-label">Student-driven initiatives</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="h-num">Weekly</div>
+                                <div class="h-label">Pitch sessions & mentorship</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=85" alt="Diverse team collaborating together" style="width:100%; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact / CTA Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-card">
+                <span class="section-badge">Have an idea?</span>
+                <h2>Bring your project to life</h2>
+                <p>Whether you have an early-stage napkin sketch or an ongoing software project, the Innovation Hub provides mentorship, hardware gear, and funding.</p>
+                <div class="contact-actions">
+                    <a href="mailto:hello@sih.edu" class="btn-primary" id="apply-grant-btn">
+                        Apply for Incubation
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </a>
+                    <a href="mailto:hello@sih.edu" class="btn-secondary" id="contact-team-btn">Contact Team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Student Innovation Hub. All rights reserved.</p>
+            <p>Crafted with curiosity for next-generation builders.</p>
+        </div>
+    </footer>
 </body>
 </html>
